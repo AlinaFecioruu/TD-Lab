@@ -1,13 +1,3 @@
-int 10;
-float a_11;
-n = 10;
-if (a == b) {
-	a + b;
-	[
-	]
-	
-}
-// ghhjghj
-
-'h'
-	
+int fun1( int fun1 ) { write '?'}
+char var1;
+int fun2 (int param) { if(5) read var2}

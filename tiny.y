@@ -1,5 +1,7 @@
 %{
-include <stdio.h>
+#include <stdio.h>
+#include "tiny.tab.h"
+void yyerror(char * s); 
 %}
 %token END
 %token INT

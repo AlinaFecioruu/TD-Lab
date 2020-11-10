@@ -89,7 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);YY_NO_UNISTD_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);YY_NO_UNISTD_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;YYDEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -157,14 +157,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lex.yy.c" />
+    <ClCompile Include="tiny.tab.c" />
     <ClCompile Include="TinyLexer.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="symbols.h" />
+    <ClInclude Include="tiny.tab.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="tiny.lex" />
     <None Include="input.csrc" />
+    <None Include="tiny.y" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

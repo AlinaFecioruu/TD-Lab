@@ -4,7 +4,7 @@ QCHAR       \'.\'
 
 %{
 #include <stdio.h>
-#include "symbols.h"
+#include "tiny.tab.h"
 
 void count();
 %}
